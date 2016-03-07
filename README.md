@@ -1,5 +1,5 @@
 # bible-search-node-proxy
-Node.js proxy server to provide CORS support for the ABS Bible Search API.
+Node.js proxy server to provide CORS support for the [American Bible Society's Bible Search API](http://bibles.org/pages/api/).
 
 ## Installation
 `git clone https://github.com/mellatone/bible-search-node-proxy.git`
