@@ -13,8 +13,6 @@ function curlRequest(token, query, callback) {
   var curl = new Curl();
   var endpoint = "https://bibles.org/" + query;
   var escapedEndpoint = endpoint.replace(/\[]/g, "\[\]") // prevent globbing error
-  console.log(token);
-  console.log(escapedEndpoint);
   curl.setOpt('URL', escapedEndpoint);
   curl.setOpt('SSL_VERIFYPEER', false);
   curl.setOpt('FOLLOWLOCATION', true);
