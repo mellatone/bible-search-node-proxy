@@ -1,0 +1,28 @@
+{
+  "name": "bible-search-node-proxy",
+  "version": "0.0.1",
+  "description": "Node.js proxy to provide CORS support for the ABS Bible Search API",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mellatone/bible-search-node-proxy.git"
+  },
+  "keywords": [
+    "bible",
+    "search",
+    "api"
+  ],
+  "author": "Steven Valladolid",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mellatone/bible-search-node-proxy/issues"
+  },
+  "homepage": "https://github.com/mellatone/bible-search-node-proxy#readme",
+  "dependencies": {
+    "node-libcurl": "^0.8.0",
+    "restify": "^4.0.4"
+  }
+}
