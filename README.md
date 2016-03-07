@@ -4,8 +4,22 @@ Node.js proxy server to provide CORS support for the ABS Bible Search API.
 ## Installation
 `git clone https://github.com/mellatone/bible-search-node-proxy.git`
 
-## Usage
-This project sets up a server to proxy API requests to the American Bible Society's Bible Search API (http://bibles.org/pages/api/). As an alternative to PHP, this project implements a Node.js server with https://github.com/restify/node-restify and https://github.com/JCMais/node-libcurl.
+## About
+This project sets up a server to proxy API requests to the [American Bible Society's Bible Search API](http://bibles.org/pages/api/). As an alternative to PHP, this project implements a Node.js server that accepts AJAX requests using  [Restify](https://github.com/restify/node-restify) and [node-libcurl](https://github.com/JCMais/node-libcurl).
+
+## Example Usage
+```javascript
+$.ajax({
+  type: "GET",
+  url: "http://localhost:8080/api/v1/passages.js?q[]=john+3:6&version=eng-KJVA",
+  dataType: 'json',
+  contentType: "application/json",
+  processData: false,
+  headers: {
+    "Authorization": "Basic " + btoa(apiKey + ":x")
+  }
+});
+```
 
 ## Contributing
 1. Fork it!
